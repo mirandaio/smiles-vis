@@ -1,0 +1,22 @@
+{
+  "name": "smiles-vis",
+  "version": "1.0.0",
+  "description": "Visualize SMILES strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirandaio/smiles-vis.git"
+  },
+  "author": "Alfredo Miranda <alfredo@miranda.io> (https://miranda.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mirandaio/smiles-vis/issues"
+  },
+  "homepage": "https://github.com/mirandaio/smiles-vis#readme",
+  "devDependencies": {
+    "webpack": "^4.9.1"
+  }
+}
