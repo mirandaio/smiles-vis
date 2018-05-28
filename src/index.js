@@ -1,3 +1,4 @@
-import "./stylesheets/styles.css";
+import './stylesheets/styles.css';
 
-console.log("hey there");
+const aspirin = 'O=C(Oc1ccccc1C(=O)O)C 0';
+console.log('hey there');
