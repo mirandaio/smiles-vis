@@ -1,3 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
 body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   background-color: papayawhip;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+}
+
+.drop-area {
+  border: 5px dashed rgba(201, 191, 244, 0.3);
+  height: 400px;
+  width: 400px;
 }
