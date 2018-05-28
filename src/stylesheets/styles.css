@@ -15,7 +15,16 @@ body {
 }
 
 .drop-area {
-  border: 5px dashed rgba(201, 191, 244, 0.3);
+  border-width: 5px;
+  border-style: dashed;
   height: 400px;
   width: 400px;
+}
+
+.empty {
+  border-color: #c9bff4;
+}
+
+.full {
+  border-color: violet;
 }
