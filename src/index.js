@@ -1,6 +1,8 @@
 import smiles from 'smiles';
 import './stylesheets/styles.css';
 
+const API_URL = 'https://www.ebi.ac.uk/chembl/api/utils';
+
 const dropArea = document.querySelector('.drop-area');
 
 window.addEventListener('drop', e => e.preventDefault());
@@ -19,8 +21,17 @@ dropArea.addEventListener('dragleave', function(event) {
 
 dropArea.addEventListener('drop', event => {
   readFileContents(event.dataTransfer.files[0]).then(
-    fileContents => {
-      console.log(fileContents);
+    smilesString => {
+      const encodedString = window.btoa(smilesString);
+      // hit endpoint smiles2ctab
+      // then hit endpoint ctab2xyz
+      // draw it
+      fetch(`${API_URL}/smiles2ctab/${encodedString}`)
+        //fetch(`${API_URL}/smiles2ctab/Tz1DKE9jMWNjY2NjMUMoPU8pTylD`)
+        .then(response => response.text())
+        .then(data => {
+          console.log('data', data);
+        });
     },
     e => {
       console.log('error', e);
